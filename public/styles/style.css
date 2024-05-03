@@ -1,0 +1,54 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+}
+
+h1, h2, h3, span {
+    color: #9AC8CD;
+}
+
+header, footer, #steps, #form {
+    background-color: #1E0342;
+    color: #E1F7F5;
+}
+
+.name {
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#home, #pricing, #about {
+    background-color: #0D0231;
+    color: #E1F7F5;
+}
+
+.card-head {
+    background-color: #9AC8CD;
+    color: #1E0342;
+    border-radius: .25rem .25rem 0 0;
+}
+
+.card-content {
+    background-color: #E1F7F5;
+    color: #1E0342;
+    padding: 16px;
+    border-radius: .25rem;
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+    background-color: #0E46A3;
+}
+
+.featurette-heading {
+    letter-spacing: -0.05rem; 
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 50px; 
+    }
+}
