@@ -108,8 +108,43 @@
   <div class="py-5" id="form">
     <div class="container">
       <div class="p-3 pb-md-4 mx-auto text-center">
-        <h2 class="pb-2 border-bottom">Pre-Interview Survey</h2>
+        <h2 class="pb-2 border-bottom">Testimonials</h2>
       </div>
+      <% if (!locals.image1) { %>
+      <form action="/get-form" method="POST" class="d-grid mx-auto col-6">
+        <input type="submit" class="btn btn-primary" value="[Coming Soon] Click to get our latest testimonials">
+      </form>
+      <% } else { %>
+      <div class="bd-example m-0 border-0">
+        <div id="carouselExampleIndicators" class="carousel slide pointer-event">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" fdprocessedid="f1a79l"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" fdprocessedid="jmbjty"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" fdprocessedid="9pirxk"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src = "https://picsum.photos/id/<%= image1 %>/800/400" width="100%" height="100%" class="d-block"/> 
+            </div>
+            <div class="carousel-item">
+              <img src = "https://picsum.photos/id/<%= image2 %>/800/400" width="100%" height="100%" class="d-block"/> 
+            </div>
+            <div class="carousel-item">
+              <img src = "https://picsum.photos/id/<%= image3 %>/800/400" width="100%" height="100%" class="d-block"/> 
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" fdprocessedid="5x0vib">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" fdprocessedid="vzq7b">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <% } %>
+        
     </div>
   </div>
 
